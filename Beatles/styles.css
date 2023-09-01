@@ -1,0 +1,162 @@
+@import url('https://fonts.cdnfonts.com/css/bootle');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+/* All */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --principal-color-text: #000000;
+    --principal-font: 'poppins', sans-serif;
+    --beatles-font: 'bootle', sans-serif;
+}
+
+.cabecalho{
+    padding: 1% 10% 0% 3%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f0f0;
+    text-align: center;
+}
+
+.cabecalho__menu{
+    padding: 0% 5% 0% 5%;
+    gap: 4.37rem;
+    display: flex;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--principal-font);
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--principal-color-text);
+}
+
+.cabecalho__menu__link_inicial{
+    text-decoration: none;
+    font-family: var(--beatles-font);
+    font-size: 1.87rem;
+    color: var(--principal-color-text);
+}
+.cabecalho__menu__link_john{
+    text-decoration: none;
+    font-family: var(--principal-font);
+    font-size: 1rem;
+    color: var(--principal-color-text);
+}
+
+.cabecalho__menu__link_john:hover{
+    color: 	#7FFF00;
+}
+
+.cabecalho__menu__link_paul{
+    text-decoration: none;
+    font-family: var(--principal-font);
+    font-size: 1rem;
+    color: var(--principal-color-text);
+}
+    
+.cabecalho__menu__link_paul:hover{
+    color: #1E90FF;
+}
+
+.cabecalho__menu__link_george{
+    text-decoration: none;
+    font-family: var(--principal-font);
+    font-size: 1rem;
+    color: var(--principal-color-text);
+}
+
+.cabecalho__menu__link_george:hover{
+    color: #ff0000;
+}
+
+.cabecalho__menu__link_ringo{
+    text-decoration: none;
+    font-family: var(--principal-font);
+    font-size: 1rem;
+    color: var(--principal-color-text);
+}
+
+.cabecalho__menu__link_ringo:hover{
+    color: #FF00FF;
+}
+
+/* index */
+
+.apresentacao{
+    margin: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 1rem;
+}
+
+.apresentacao__conteudo{
+    width: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.12rem;
+}
+
+.apresentacao__conteudo__texto{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao__conteudo__titulo{
+    font-family: var(--principal-font);
+    font-size: 2rem;
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-family: var(--principal-font);
+}
+
+.img__beatles_inicio{
+    max-width: 100%;
+}
+
+.apresentacao_img{
+    width: 40%;
+}
+
+.albuns_img{
+    width: 20%;
+}
+
+.rodape{
+    margin: 0%;
+    padding: 0.5rem;
+    background-color: #f1f0f0;
+    color: var(--principal-color-text);
+    font-family: 'oswald', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* mobile */
+
+@media(max-width: 1290px){
+    .cabecalho{
+        padding: 1% 3% 0% 3%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .cabecalho__menu{
+        padding: 3% 1% 0% 1%;
+        gap: 1rem;
+        display: flex;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+    }
+}
